@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会跟信息登记表</title>
+</head>
+<body>
+	<form action="receive2.php" method="post">
+    <table>
+       <caption>会跟信息登记表</caption>
+       <tr>
+           <th>基本信息</th>
+       </tr>
+        <tr>
+           <td>企业名称<input type="text" name="qyid"></td>
+		</tr>
+		<tr>
+           <td>企业位置<input type="text" name="location"></td>
+		</tr>
+		<tr>
+		   <td>企业负责人姓名<input type="text" name="qyname"></td>
+        </tr>
+        <tr>
+           <td>手机号<input type="text" name="qynumber"></td>
+           <td>传真<input type="text" name="fax"></td>
+		   <td>电子邮箱<input type="text" name="qyemail"></td>
+        </tr>
+	    <tr>
+			<td>企业占地面积<input type="text" name="area1"></td>
+			<td>企业建筑面积<input type="text" name="area2"></td>
+		</tr>
+		<tr>
+			<td>注册资本<input type="text" name="rgs_capital"></td>
+			<td>注册时间<input type="text" name="rgs_time"></td>
+		</tr>
+		<tr>
+			<td>从业人员构成</td>
+			<td>
+				<td>人员总数<input type="text" name="amount"></td>
+				<td>部门
+					<td>
+						<td>管理人员<input type="text" name="administrator"></td>
+						<td>工人<input type="text" name="woker"></td>
+					</td>
+				</td>
+				<td>备注<input type="text" name="tips"></td>				
+			</td>
+		</tr>
+		<tr>
+			<input type="submit" value="提交"/>
+		</tr>
+    </table>
+    </form>
+</body>
+</html>
