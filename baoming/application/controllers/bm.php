@@ -1,13 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Zhuli extends CI_Controller {
+class Bm extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->helper('common_helper');
 		$this->user_table = 'user';
     }
-	
+	public function index()
+	{
+		$this->load->view('baoming.php');
+	}
 	//报名验证
 	public function AjaxBaoming(){
 		$mobile = $this->input->post('mobile');
@@ -30,7 +33,6 @@ class Zhuli extends CI_Controller {
 			echo json_encode($data);
 			exit;
 		}
-		
 
 		$this->db->set('mobile',$mobile);
 		$this->db->set('name',$name);
@@ -48,4 +50,4 @@ class Zhuli extends CI_Controller {
 		echo json_encode($data);
 		exit;
 	}
-?>
+}
